@@ -7,18 +7,3 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
-class Cars(models.Model):
-    brand = models.CharField(max_length=100)
-    model = models.CharField(max_length=100)
-    cm3 = models.IntegerField()
-    kw = models.IntegerField()
-    carburant = models.CharField(max_length=100)
-    min_emission_co2 = models.IntegerField()
-    max_emission_co2 = models.IntegerField()
-    min_consumption = models.DecimalField(max_digits=10, decimal_places=0)
-    max_consumption = models.DecimalField(max_digits=10, decimal_places=0)
-
-    class Meta:
-        managed = False
-        db_table = 'cars'

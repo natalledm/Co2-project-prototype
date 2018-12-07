@@ -9,17 +9,17 @@ from django.db import models
 
 
 class Cars(models.Model):
-    brand = models.CharField(primary_key=True, max_length=100)
-    type = models.CharField(max_length=100)
+    brand = models.CharField(max_length=100)
+    model = models.CharField(max_length=100)
     cm3 = models.IntegerField()
-    power = models.IntegerField()
+    kw = models.IntegerField()
     carburant = models.CharField(max_length=100)
-    min_emission_co2 = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True)
-    max_emission_co2 = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True)
-    min_consumation = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True)
-    max_consumation = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True)
+    min_emission_co2 = models.IntegerField()
+    max_emission_co2 = models.IntegerField()
+    min_consumption = models.DecimalField(max_digits=10, decimal_places=0)
+    max_consumption = models.DecimalField(max_digits=10, decimal_places=0)
 
     class Meta:
-        managed = False
+        managed = False # true = python can change it; false = imutable.
         db_table = 'cars'
-        unique_together = (('brand', 'type', 'cm3', 'power', 'carburant'),)
+        # unique_together = (('brand', 'type', 'cm3', 'power', 'carburant'),)
