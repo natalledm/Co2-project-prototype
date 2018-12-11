@@ -23,3 +23,12 @@ class Cars(models.Model):
         managed = False # true = python can change it; false = imutable.
         db_table = 'cars'
         # unique_together = (('brand', 'type', 'cm3', 'power', 'carburant'),)
+    
+    def vehicle(self):
+        return self.brand + ' ' + self.model + ' ' + str(self.cm3) + ' ' + str(self.kw) + ' ' + self.carburant
+
+    def comsumption(self):
+        return self.vehicle() + ' ' + str(self.min_emission_co2) + ' ' + str(self.max_emission_co2) + ' ' + str(self.min_emission_co2) + ' ' + str(self.max_emission_co2) + ' ' + str(self.min_consumption) + ' ' + str(self.max_consumption)
+
+    def __str__(self):
+        return self.comsumption()
