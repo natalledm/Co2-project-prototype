@@ -18,7 +18,7 @@ class Cars(models.Model):
     max_emission_co2 = models.IntegerField()
     min_consumption = models.DecimalField(max_digits=10, decimal_places=0)
     max_consumption = models.DecimalField(max_digits=10, decimal_places=0)
-
+    #primary_key=True
     class Meta:
         managed = False # true = python can change it; false = imutable.
         db_table = 'cars'
