@@ -1,1 +1,71 @@
-{{car}}
+{% extends 'cars/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'cars/car.css' %}">
+
+<!-- {{car}} -->
+<div class="white-rectangle">
+    <div class="flex-button">
+        <div>
+            <button class="black-button text-button-black">
+                BOARD
+            </button>
+        </div>
+        <div>
+            <button class="white-button text-button-white">
+                GRAPH
+            </button>
+        </div>
+    </div>
+    <div class="atribute-container">
+        <div class="flex-item">
+            <span class="second-title value">
+                Brand
+            </span></br>
+            <span class="second-title">{{car.brand}}</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Model
+            </span></br>
+            <span class="second-title">{{car.model}}</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Cilindrée (cm³)
+            </span></br>
+            <span class="second-title">{{car.cm3}}</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Power (pw)
+            </span></br>
+            <span class="second-title">{{car.kw}}</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Carburant
+            </span></br>
+            <span class="second-title">{{car.carburant}}</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Emission CO2 (g/km)
+            </span></br>
+            <span class="second-title">{{car.min_emission_co2}} Min</span><br>
+            <span class="second-title">{{car.max_emission_co2}} Max</span>
+        </div>
+        <div class="flex-item">
+            <span class="second-title value">
+                Consumption (l/100km)
+            </span></br>
+            <span class="second-title">{{car.min_consumption}} Min</span><br>
+            <span class="second-title">{{car.max_consumption}} Max</span>
+        </div>
+    
+    </div>
+    <div class="flex-home">
+        <a href="{% url 'home' %}">Go Home</a>
+    </div>
+</div>
+{% endblock %}

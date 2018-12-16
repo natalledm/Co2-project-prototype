@@ -1,0 +1,90 @@
+.background {
+    background-color: #020202;
+}
+
+.flex-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.block {
+    width: 1100px;
+    height: 535px;
+    border-radius: 8px;
+    padding: 55px 105px;
+}
+
+.lux {
+    height: 78px;
+    font-family: Bentham;
+    font-size: 80px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.search-text {
+    width: 431px;
+    height: 71px;
+    font-family: AvenirNext;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b2b2b2;
+}
+
+.search-bar {
+    width: 754px;
+    height: 74px;
+    border-radius: 8px;
+}
+
+.placeholder-search {
+    width: 152px;
+    height: 35px;
+    font-family: AvenirNext;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    color: #b2b2b2;
+}
+
+.go-button {
+    width: 148px;
+    height: 74px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.go-text {
+    width: 36px;
+    height: 35px;
+    font-family: AvenirNext;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.car-image {
+    width: 1171px;
+    height: 690px;
+    object-fit: contain;
+}
+

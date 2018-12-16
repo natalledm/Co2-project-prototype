@@ -6,7 +6,7 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
-
+from django import forms
 
 class Cars(models.Model):
     brand = models.CharField(max_length=100)
@@ -32,3 +32,9 @@ class Cars(models.Model):
 
     def __str__(self):
         return self.comsumption()
+
+class BrandForm(forms.Form):
+    brand_name = forms.CharField(label='Brand name', max_length=100)
+
+    def __str__(self):
+        return self()

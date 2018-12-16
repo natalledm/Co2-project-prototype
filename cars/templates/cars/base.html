@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<head>
+    <title>Car CO2 Emission</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'cars/base.css' %}">
+</head>
+<body class="background">
+    <div class="flex-title lux">
+        <span>LUX</span>
+    </div>
+    <div class="block">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

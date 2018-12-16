@@ -19,6 +19,6 @@ from cars import views, urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.show_form, name='home'),
     path('brand/', include('cars.urls')),
 ]

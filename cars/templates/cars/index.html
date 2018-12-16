@@ -1,0 +1,19 @@
+{% extends 'cars/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'cars/search.css' %}">
+
+<div class="flex-text">
+    <span class="text">
+        Enter your car company name brand and car model 
+        to find the carbon emission
+    </span>
+</div>
+
+<div class="flex-form">
+    <form action="{% url 'cars:brand' %}" method="GET">
+        <input id="car" class="search-box" type="text" name="car" value="" placeholder="Enter Car Brand">
+        <input type="submit" value="GO" class="go-layout go-text"/>
+    </form>
+</div>
+{% endblock %}
