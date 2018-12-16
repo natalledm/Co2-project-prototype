@@ -1,11 +1,22 @@
-{% if cars_list %}
+{% extends 'cars/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'cars/search.css' %}">
+
+<div class="white-box">
+    {% if cars_list %}
     <ul>
     {% for car in cars_list %}
-        <li><a href="/brand/{{ car.id }}/">
+        <li>
+            <a href="/brand/{{ car.id }}/">
             {{ car.vehicle }}
-        </a></li>
+            </a>
+        </li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No cars are available.</p>
 {% endif %}
+</div>
+
+{% endblock %}

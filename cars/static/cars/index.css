@@ -1,0 +1,49 @@
+.flex-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.text {
+    width: 431px;
+    height: 71px;
+    font-family: AvenirNext;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b2b2b2;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-box {
+    width: 754px;
+    height: 74px;
+    border-radius: 8px;
+}
+
+.go-layout {
+    width: 148px;
+    height: 74px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.go-text {
+    font-family: AvenirNext;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #000000;
+}

@@ -1,5 +1,6 @@
 .background {
-    background-color: #020202;
+    background: #020202;
+    padding: 0px 105px;
 }
 
 .flex-title {
@@ -13,7 +14,8 @@
     width: 1100px;
     height: 535px;
     border-radius: 8px;
-    padding: 55px 105px;
+    padding: 55px 0px;
+    background: url(car_1171_690.png) #020202;
 }
 
 .lux {
